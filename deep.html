@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano 15 Dias: Barriga Chapada & Bumbum Turbinado</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #FFF5F5;
+            color: #333;
+            line-height: 1.5;
+            padding: 0;
+            margin: 0;
+        }
+        /* Configurações para impressão */
+        @page {
+            size: A4;
+            margin: 1cm;
+        }
+        .pdf-page {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            page-break-after: always;
+            padding: 0;
+        }
+        .day-pair {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin: auto;
+            width: 90%;
+            max-width: 600px;
+        }
+        .day {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            break-inside: avoid;
+        }
+        h1 {
+            color: #FF6B8B;
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        h2 {
+            color: #6B5FEF;
+            font-size: 18px;
+            border-bottom: 2px dashed #FFE8E8;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+        .task {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+        .task input {
+            margin-right: 10px;
+            transform: scale(1.2);
+        }
+        .tip {
+            background: #F0F8FF;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #888;
+            font-size: 14px;
+        }
+        @media print {
+            body {
+                background: white;
+            }
+            .pdf-page {
+                height: 100%;
+                justify-content: start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Página 1 (Dias 1 e 2) -->
+    <div class="pdf-page">
+        <h1>💃 Plano de 15 Dias 💃</h1>
+        <p style="text-align: center;"><em>Barriga Chapada + Bumbum Turbinado</em></p>
+        
+        <div class="day-pair">
+            <!-- Dia 1 -->
+            <div class="day">
+                <h2>📅 DIA 1</h2>
+                <p><strong>🎯 Meta do dia:</strong> Começar com tudo!</p>
+                <div class="task">
+                    <input type="checkbox" id="dia1-1">
+                    <label for="dia1-1">2 copos de água ao acordar (em jejum)</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="dia1-2">
+                    <label for="dia1-2">Corte refrigerante ou suco industrializado</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="dia1-3">
+                    <label for="dia1-3">20 agachamentos (faça enquanto escova os dentes)</label>
+                </div>
+                <div class="tip">
+                    💡 <strong>Dica:</strong> Anote seu peso e tire uma foto do "antes"!
+                </div>
+            </div>
+
+            <!-- Dia 2 -->
+            <div class="day">
+                <h2>📅 DIA 2</h2>
+                <p><strong>🎯 Meta do dia:</strong> Proteína + Movimento!</p>
+                <div class="task">
+                    <input type="checkbox" id="dia2-1">
+                    <label for="dia2-1">1 copo de água com limão em jejum</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="dia2-2">
+                    <label for="dia2-2">Café da manhã: 1 ovo cozido + 1 fatia de abacate</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="dia2-3">
+                    <label for="dia2-3">Caminhe 10 minutos (pode ser no quintal ou varanda)</label>
+                </div>
+                <div class="tip">
+                    💡 <strong>Dica:</strong> Mastigue devagar para digestão melhor!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Página 2 (Dias 3 e 4) -->
+    <div class="pdf-page">
+        <div class="day-pair">
+            <!-- Dia 3 -->
+            <div class="day">
+                <h2>📅 DIA 3</h2>
+                <p><strong>🎯 Meta do dia:</strong> Trocar o branco pelo integral!</p>
+                <div class="task">
+                    <input type="checkbox" id="dia3-1">
+                    <label for="dia3-1">Substitua pão branco por pão integral ou tapioca</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="dia3-2">
+                    <label for="dia3-2">30 segundos de "ponte" (deitada, levante o bumbum)</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="dia3-3">
+                    <label for="dia3-3">Beba chá de hibisco ou chá-verde (sem açúcar)</label>
+                </div>
+                <div class="tip">
+                    💡 <strong>Dica:</strong> Durma 15 minutos mais cedo hoje!
+                </div>
+            </div>
+
+            <!-- Dia 4 -->
+            <div class="day">
+                <h2>📅 DIA 4</h2>
+                <p><strong>🎯 Meta do dia:</strong> Fibras para saciar!</p>
+                <div class="task">
+                    <input type="checkbox" id="dia4-1">
+                    <label for="dia4-1">1 colher de aveia no café ou iogurte</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="dia4-2">
+                    <label for="dia4-2">15 agachamentos + 10 elevações de perna (de lado)</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="dia4-3">
+                    <label for="dia4-3">Não beba líquidos 30min antes/depois das refeições</label>
+                </div>
+                <div class="tip">
+                    💡 <strong>Dica:</strong> Use um elástico no pulso para lembrar de beber água!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Página 3 (Dias 5 e 6) -->
+    <div class="pdf-page">
+        <div class="day-pair">
+            <!-- Dia 5 -->
+            <div class="day">
+                <h2>📅 DIA 5</h2>
+                <p><strong>🎯 Meta do dia:</strong> Dormir melhor = menos gordura!</p>
+                <div class="task">
+                    <input type="checkbox" id="dia5-1">
+                    <label for="dia5-1">Jante até 2h antes de dormir</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="dia5-2">
+                    <label for="dia5-2">1 minuto de prancha (apoie nos cotovelos)</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="dia5-3">
+                    <label for="dia5-3">Evite frituras hoje</label>
+                </div>
+                <div class="tip">
+                    💡 <strong>Dica:</strong> Desligue o celular 30min antes de dormir!
+                </div>
+            </div>
+
+            <!-- Dia 6 -->
+            <div class="day">
+                <h2>📅 DIA 6</h2>
+                <p><strong>🎯 Meta do dia:</strong> Gordura boa pro bumbum!</p>
+                <div class="task">
+                    <input type="checkbox" id="dia6-1">
+                    <label for="dia6-1">1 colher de sopa de pasta de amendoim ou castanhas</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="dia6-2">
+                    <label for="dia6-2">20 agachamentos sumô (pernas abertas)</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="dia6-3">
+                    <label for="dia6-3">Substitua o açúcar por canela ou adoçante</label>
+                </div>
+                <div class="tip">
+                    💡 <strong>Dica:</strong> Inspire 5 segundos, expire 5 segundos para reduzir ansiedade!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Página 4 (Dias 7 e 8) -->
+    <div class="pdf-page">
+        <div class="day-pair">
+            <!-- Dia 7 -->
+            <div class="day">
+                <h2>📅 DIA 7</h2>
+                <p><strong>🎯 Meta do dia:</strong> Desintoxicar!</p>
+                <div class="task">
+                    <input type="checkbox" id="dia7-1">
+                    <label for="dia7-1">Beba 1 copo de água morna com 1 colher de vinagre de maçã</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="dia7-2">
+                    <label for="dia7-2">15 minutos de caminhada acelerada</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="dia7-3">
+                    <label for="dia7-3">Coma 1 fruta com casca (maçã, pera, ameixa)</label>
+                </div>
+                <div class="tip">
+                    💡 <strong>Dica:</strong> Celebre sua primeira semana! Tome um banho relaxante.
+                </div>
+            </div>
+
+            <!-- Dia 8 -->
+            <div class="day">
+                <h2>📅 DIA 8</h2>
+                <p><strong>🎯 Meta do dia:</strong> Ativar o metabolismo!</p>
+                <div class="task">
+                    <input type="checkbox" id="dia8-1">
+                    <label for="dia8-1">Acorde e alongue o corpo por 2 minutos</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="dia8-2">
+                    <label for="dia8-2">30 segundos de prancha + 10 flexões de glúteo (4 apoios)</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="dia8-3">
+                    <label for="dia8-3">Tempero termogênico: pimenta ou gengibre na comida</label>
+                </div>
+                <div class="tip">
+                    💡 <strong>Dica:</strong> Beba água gelada para gastar calorias!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Página 5 (Dias 9 e 10) -->
+    <div class="pdf-page">
+        <div class="day-pair">
+            <!-- Dia 9 -->
+            <div class="day">
+                <h2>📅 DIA 9</h2>
+                <p><strong>🎯 Meta do dia:</strong> Foco no bumbum!</p>
+                <div class="task">
+                    <input type="checkbox" id="dia9-1">
+                    <label for="dia9-1">Coma 1 porção de proteína no almoço (frango, peixe, ovo)</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="dia9-2">
+                    <label for="dia9-2">3 séries de 10 "chutes de burro" (por perna)</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="dia9-3">
+                    <label for="dia9-3">Evite pão francês ou biscoitos hoje</label>
+                </div>
+                <div class="tip">
+                    💡 <strong>Dica:</strong> Contraia o bumbum sempre que ficar em pé!
+                </div>
+            </div>
+
+            <!-- Dia 10 -->
+            <div class="day">
+                <h2>📅 DIA 10</h2>
+                <p><strong>🎯 Meta do dia:</strong> Queimar extra!</p>
+                <div class="task">
+                    <input type="checkbox" id="dia10-1">
+                    <label for="dia10-1">Beba chá de cavalinha ou dente-de-leão (diurético)</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="dia10-2">
+                    <label for="dia10-2">Suba escadas por 5 minutos (ou simule no degrau de casa)</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="dia10-3">
+                    <label for="dia10-3">Jante proteína + salada verde</label>
+                </div>
+                <div class="tip">
+                    💡 <strong>Dica:</strong> Use fita métrica para medir a cintura e o bumbum!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Página 6 (Dias 11 e 12) -->
+    <div class="pdf-page">
+        <div class="day-pair">
+            <!-- Dia 11 -->
+            <div class="day">
+                <h2>📅 DIA 11</h2>
+                <p><strong>🎯 Meta do dia:</strong> Relaxar e recuperar!</p>
+                <div class="task">
+                    <input type="checkbox" id="dia11-1">
+                    <label for="dia11-1">Beba água de coco ou suco verde (couve + limão)</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="dia11-2">
+                    <label for="dia11-2">Alongamento de 5 minutos (pernas e coluna)</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="dia11-3">
+                    <label for="dia11-3">Durma sem luzes ou TV ligada</label>
+                </div>
+                <div class="tip">
+                    💡 <strong>Dica:</strong> Massageie o abdômen com óleo de coco para reduzir inchaço!
+                </div>
+            </div>
+
+            <!-- Dia 12 -->
+            <div class="day">
+                <h2>📅 DIA 12</h2>
+                <p><strong>🎯 Meta do dia:</strong> Acelerar resultados!</p>
+                <div class="task">
+                    <input type="checkbox" id="dia12-1">
+                    <label for="dia12-1">Café preto sem açúcar (se tolerar)</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="dia12-2">
+                    <label for="dia12-2">20 agachamentos pulando (ou normais se for difícil)</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="dia12-3">
+                    <label for="dia12-3">Jante até 19h (ou 3h antes de dormir)</label>
+                </div>
+                <div class="tip">
+                    💡 <strong>Dica:</strong> Use roupas justas para se motivar!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Página 7 (Dias 13 e 14) -->
+    <div class="pdf-page">
+        <div class="day-pair">
+            <!-- Dia 13 -->
+            <div class="day">
+                <h2>📅 DIA 13</h2>
+                <p><strong>🎯 Meta do dia:</strong> Firmeza total!</p>
+                <div class="task">
+                    <input type="checkbox" id="dia13-1">
+                    <label for="dia13-1">1 banana antes do treino (evita câimbra)</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="dia13-2">
+                    <label for="dia13-2">3 séries de: 10 agachamentos + 10 pontes</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="dia13-3">
+                    <label for="dia13-3">Reduza o sal da comida pela metade</label>
+                </div>
+                <div class="tip">
+                    💡 <strong>Dica:</strong> Inspire pelo nariz, expire pela boca durante os exercícios!
+                </div>
+            </div>
+
+            <!-- Dia 14 -->
+            <div class="day">
+                <h2>📅 DIA 14</h2>
+                <p><strong>🎯 Meta do dia:</strong> Último esforço!</p>
+                <div class="task">
+                    <input type="checkbox" id="dia14-1">
+                    <label for="dia14-1">Beba 3L de água hoje</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="dia14-2">
+                    <label for="dia14-2">30 minutos de caminhada ou dança</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="dia14-3">
+                    <label for="dia14-3">Jante só proteína + vegetais (ex: omelete com espinafre)</label>
+                </div>
+                <div class="tip">
+                    💡 <strong>Dica:</strong> Tire uma foto e compare com o Dia 1 – você vai se surpreender!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Página 8 (Dia 15 + Notas Finais) -->
+    <div class="pdf-page">
+        <div class="day-pair">
+            <!-- Dia 15 -->
+            <div class="day">
+                <h2>📅 DIA 15</h2>
+                <p><strong>🎯 Meta do dia:</strong> Celebrar!</p>
+                <div class="task">
+                    <input type="checkbox" id="dia15-1">
+                    <label for="dia15-1">Repita seus hábitos favoritos da semana</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="dia15-2">
+                    <label for="dia15-2">30 agachamentos + 1 minuto de prancha</label>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="dia15-3">
+                    <label for="dia15-3">Comemore com um jantar saudável (ex: salmão + batata-doce)</label>
+                </div>
+                <div class="tip">
+                    💡 <strong>Dica:</strong> Continue pelo menos 70% desse plano para manter os resultados!
+                </div>
+            </div>
+
+            <!-- Notas Finais -->
+            <div class="day" style="margin-top: 20px;">
+                <h2>📝 Dicas Extras</h2>
+                <ul style="padding-left: 20px;">
+                    <li><strong>Água:</strong> Beba 1 copo antes de cada refeição para reduzir fome.</li>
+                    <li><strong>Exercícios:</strong> Faça agachamentos no banho ou enquanto espera o café esquentar.</li>
+                    <li><strong>Alimentos "inimigos":</strong> Açúcar refinado, álcool e farinha branca.</li>
+                    <li><strong>Alimentos "amigos":</strong> Ovos, abacate, frutas vermelhas, aveia e chá-verde.</li>
+                </ul>
+                <div class="tip" style="background: #FFEEF6;">
+                    🌟 <strong>Você conseguiu!</strong> Agora repita os melhores dias ou crie sua própria rotina!
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            Feito com ❤️ | Imprima em PDF (A4) para melhor resultado
+        </div>
+    </div>
+</body>
+</html>
